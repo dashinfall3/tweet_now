@@ -35,7 +35,7 @@ require APP_ROOT.join('config', 'database')
 
 if Sinatra::Application.development?
   twitter_data = YAML.load_file(APP_ROOT.join('config', 'twitter.yml'))
-  ENV["TWITTER_KEY"] = twitter_data['twitter_data']
+  ENV["TWITTER_KEY"] = twitter_data['twitter_key']
   ENV["TWITTER_SECRET"] = twitter_data['twitter_secret']
 end
 
