@@ -14,7 +14,7 @@ var TweetForm = {
   render: function() {
     $('.messages').html('Tweet Posted!');
     $('#tweet-form').children("textarea[name=tweet]").val(''); 
-    $('.load').toggle(); 
+    $('div.spinner').toggle(); 
   },
 
   validate: function(tweet){

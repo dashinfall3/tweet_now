@@ -1,18 +1,12 @@
 body {
-  background-image: url('/images/knitting250px.png');
-  background-repeat: repeat;
+  background-color: #F9FDFF;
 }
 
-.load {
-  display: none;
-}
-
-.container {
-  width: 500px;
+.tweet-container {
+  width: 60%;
+  max-width: 600px;
   background-color: #8ec1da;
-  position: fixed;
-  left: 20%;
-  top: 20%;
+  margin: 0 auto;
   padding: 2em;
   border-radius: 0.4em;
 }
@@ -23,52 +17,49 @@ textarea, input {
 }
 
 textarea {
-  width: 100%;
+  margin: 0 auto;
+  width: 97.5%;
   height: 60px;
 }
 
-input {
+div.navbar-inner {
+  border-radius: 0;
+  height: 2.5em;
+  margin-bottom: 3em;
+}
+
+ul.nav {
+  margin-top: 0;
+}
+
+div.nav-container {
   float: right;
 }
 
-h1 {
-  text-align: center;
-  color: #00BBF5;
-}
-
-#login-btn {
-  text-align: center;
-}
-
-#login-btn a {
-  text-decoration: none;
-  color: white;
-}
-
-#login-btn a:hover {
-  text-decoration: underline;
-}
-
-nav ul {
-  float: right;
-}
-
-nav li:first-child {
-  border-right: 1px black solid;
-  padding-right: 1em;
-}
-
-nav li {
-  list-style: none;
+ul.nav li {
   float: left;
-  padding-left: 1em;
+  list-style-type: none;
+  margin-top: 0.5em;
 }
 
-#signout {
-  margin-right: 1em;
+ul.nav li a {
   text-decoration: none;
 }
 
-#signout:hover {
-  text-decoration: underline;
+input.tweet-submit-btn {
+  margin-top: 1.75em;
+  border-radius: 0.25em;
 }
+
+div.spinner {
+  display: none;
+}
+
+div.footer {
+  width: 100%;
+  height: 1.5em;
+  position: absolute;
+  bottom: 0;
+  background-color: #34495e;
+}
+

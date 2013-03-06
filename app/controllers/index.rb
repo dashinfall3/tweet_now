@@ -33,6 +33,8 @@ before do
 end
 
 get '/' do
+  session[:username] ||= @client.user.screen_name if @client
+  @name = session[:username]
   erb :index
 end
 

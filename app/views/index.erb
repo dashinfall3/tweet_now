@@ -1,19 +1,17 @@
-<div class='container'>
-  
-  <h1>Tweet Now, Do it!</h1>
-
+<div class='tweet-container'>
   <% if @client %>
+    <h1>Tweet Now, Do it!</h1>
     <form action='/tweets' method='post' id='tweet-form'>
       <textarea name='tweet' placeholder='tweet'></textarea>
-      <input type='submit' value='Tweet' />
+      <input class="tweet-submit-btn btn btn-large btn-block" type='submit' value='Tweet' />
     </form>
   <% else %>
-    <div id="login-btn">
-      <a href="/request">Sign in with Twitter</a>
-    </div>
+    <h1>Please sign in with Twitter.</h1>
   <% end %>
   <div class='messages'>
   </div>
 
-  <img src='/images/infinity.gif' class='load' />
+  <div class="spinner">
+    <img src='/images/infinity.gif' class='load' />
+  </div>
 </div>
