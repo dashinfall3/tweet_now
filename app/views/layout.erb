@@ -14,6 +14,15 @@
   <title></title>
 </head>
 <body>
+  <nav>
+    <% if @client %>
+      <ul>
+        <li><%= @client.user.screen_name %></li>
+        <li><a id="signout" href="#">Sign out</a></li>
+      </ul>
+    <% else %>
+    <% end %>
+  </nav>
   <%= yield %>
 </body>
 </html>

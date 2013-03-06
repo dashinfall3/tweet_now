@@ -1,12 +1,17 @@
 <div class='container'>
   
-  <h1>Neko Tweet</h1>
+  <h1>Tweet Now, Do it!</h1>
 
-  <form action='/tweets' method='post' id='tweet-form'>
-    <textarea name='tweet' placeholder='tweet'></textarea>
-    <input type='submit' value='Tweet' />
-  </form>
-
+  <% if @client %>
+    <form action='/tweets' method='post' id='tweet-form'>
+      <textarea name='tweet' placeholder='tweet'></textarea>
+      <input type='submit' value='Tweet' />
+    </form>
+  <% else %>
+    <div id="login-btn">
+      <a href="/request">Sign in with Twitter</a>
+    </div>
+  <% end %>
   <div class='messages'>
   </div>
 

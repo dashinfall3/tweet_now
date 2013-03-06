@@ -1,3 +1,8 @@
+body {
+  background-image: url('/images/knitting250px.png');
+  background-repeat: repeat;
+}
+
 .load {
   display: none;
 }
@@ -29,4 +34,41 @@ input {
 h1 {
   text-align: center;
   color: #00BBF5;
+}
+
+#login-btn {
+  text-align: center;
+}
+
+#login-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+#login-btn a:hover {
+  text-decoration: underline;
+}
+
+nav ul {
+  float: right;
+}
+
+nav li:first-child {
+  border-right: 1px black solid;
+  padding-right: 1em;
+}
+
+nav li {
+  list-style: none;
+  float: left;
+  padding-left: 1em;
+}
+
+#signout {
+  margin-right: 1em;
+  text-decoration: none;
+}
+
+#signout:hover {
+  text-decoration: underline;
 }

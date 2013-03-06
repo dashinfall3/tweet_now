@@ -17,6 +17,10 @@ gem 'twitter'
 
 gem 'rake'
 
+gem 'oauth'
+
+gem 'awesome_print'
+
 group :test do
   gem 'faker'
   gem 'rspec'

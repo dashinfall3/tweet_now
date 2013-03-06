@@ -50,4 +50,16 @@ var TweetForm = {
 
 $(document).ready(function(){
   TweetForm.init();
+
+  $("#signout").on("click", function(e){
+    e.preventDefault();
+
+    $.ajax({
+      type: "DELETE",
+      url: "/signout"
+    }).done(function(data){
+      console.log("done");
+      $(location).attr("href", "/");
+    });
+  });
 });
