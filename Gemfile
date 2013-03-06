@@ -1,4 +1,4 @@
-source :rubygems
+source "https://rubygems.org"
 
 # PostgreSQL driver
 gem 'pg'
@@ -14,12 +14,9 @@ gem 'activesupport'
 gem 'activerecord'
 
 gem 'twitter'
-
-gem 'rake'
-
 gem 'oauth'
 
-gem 'awesome_print'
+gem 'rake'
 
 group :test do
   gem 'faker'
